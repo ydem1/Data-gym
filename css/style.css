@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+ul{
+    list-style: none;
+}
+
+
+/*header*/
+header{
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Uchen', serif, Arial, Helvetica, sans-serif;
+    position: fixed;
+    border-bottom: 5px solid rgb(22, 69, 136) ;
+}
+header h1{
+    justify-content: left;
+    margin-left: 20%;
+    float: left;
+}
+header > ul{
+    display: flex;
+    justify-content: right;
+}
+header > ul li a{
+    display: block;
+    padding: 15px 20px 15px 20px;
+    color: #434343;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    justify-content: center;
+}
+
+header li a:hover{
+    background-color: #1c4a8b;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+/*panel_manage_clients*/
+.panel{
+    padding-top: 60px;
+    width: 100%;
+    background-color:  rgb(7, 14, 24);
+    display: flex;
+    justify-content: center;
+}
+.panel > ul{
+    display: flex;
+    justify-content: right;
+}
+.panel > ul li a{
+    display: block;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+.panel > ul li{
+    position: relative;
+}
+.panel li a:hover{
+    background-color: #1c4a8b;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+
+/*main*/
+#main{
+    font-family: 'Uchen', serif, Arial, Helvetica, sans-serif;
+    background: linear-gradient( #070e18,#164588, rgb(14, 33, 86));
+    background-blend-mode: multiply;
+    background-size: cover;
+    text-align: center;
+}
+#main h1 {
+    padding-top: 140px;
+    color:#ffff;
+}
+#main p {
+    padding-top: 140px;
+    padding-bottom: 300px;
+    color:#ffff;
+}
+
+/*display_clients*/
+.list_of_clients table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.list_of_clients th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+.list_of_clients  tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.list_of_clients th {
+    background-color: rgb(22, 69, 136) ;
+    color: white;
+}
+.title_of_table{
+    text-align: center;
+    position: sticky; 
+    overflow: hidden;
+    top: 50px; 
+}
+.show_visit{
+    text-align: center;
+}
+  
+/*add_client*/
+.input_client{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    justify-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#ffff;
+    background: linear-gradient( #070e18,#164588, rgb(14, 33, 86));
+    
+}
+
+/*login*/
+.photo {
+    width: 200px;
+    border-radius: 50%;
+}
+.login_input{
+    color: white;
+    background: linear-gradient( #070e18,#164588, rgb(14, 33, 86));
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+.login_input form {
+    text-align: center;
+}
+
+/* client page*/
+.page_client {
+    font-size: 18px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    padding-top: 80px;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient( #070e18,#164588, rgb(14, 33, 86));
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: center;
+}
+.balance {
+    font-size: 24px;
+    font-weight: bold;
+}
+.right {
+    padding: 50px;
+    grid-column: 2/4;
+}
+.right div{
+    border-bottom: 5px solid #164588 ;
+}
+.title_plans,.button{
+    background: linear-gradient( #070e18,#164588, rgb(14, 33, 86));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    border-top: 5px solid rgb(22, 69, 136) ;
+    color: white;
+}
+.title_plans p{
+    font-size: 18px;
+    padding: 50px;
+}
+.button{
+    height: 100px;
+    justify-content: center
+    
+}
+.button > ul li a{
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    background-color: #050a11;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.button li a:hover{
+    background-color: #616d7e;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(7, 14, 24);
+    border-top: 5px solid rgb(22, 69, 136) ;
+    color: rgb(79, 86, 93);
+    height: 150px;
+    
+    bottom: 0;
+}
+footer span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .icon{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    display: block;
+    padding: 40px 20px 15px 20px;
+}
+footer .fa{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.Error{
+    text-align: center;  
+    font-size: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+
